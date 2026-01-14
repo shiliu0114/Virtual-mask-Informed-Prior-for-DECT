@@ -29,9 +29,42 @@ Key words—Dual-energy CT, sparse-view reconstruction, virtual mask, dual-domai
   <em>Figure 3:The process of inverse mutual perturbation transformation. (a)Projectiondomain,(b) Wavelet domain.</em>
 </p>
 
+<p align="center">
+  <img src="images/4.png" alt="The training stage and iterative reconstruction stage of the proposed VIP-DECT method." width="800">
+  <br>
+  <em>Figure 4:The training stage and iterative reconstruction stage of the proposed VIP-DECT method. (a) Training scheme of PPM (b) Training scheme of WPM,(c) Reconstruction stage.</em>
+</p>
 
+## Results
+<p align="center">
+  <img src="images/5.png" alt="Reconstruction results from 60 views on the head DECT dataset." width="800">
+  <br>
+  <em>Figure 5:Reconstruction results from 60 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed images, with the display window set to the range of [0, 220] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT.</em>
+</p>
 
+<p align="center">
+  <img src="images/6.png" alt="Reconstruction results from 90 views on the head DECT dataset." width="800">
+  <br>
+  <em>Figure 6:Reconstruction results from 90 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed images, with the display window set to the range of [0, 180] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT</em>
+</p>
 
+<p align="center">
+  <img src="images/7.png" alt="Reconstruction results from 60 views on the mouse thoracic DECT dataset." width="800">
+  <br>
+  <em>Figure 7:Reconstruction results from 60 views on the mouse thoracic DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed images, with the display window set to the range of [0, 180] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT.</em>
+</p>
+
+<p align="center">
+  <img src="images/8.png" alt="Comparison of profile analyses for reconstruction results of different methods in sparse-view reconstruction on the head DECT dataset." width="800">
+  <br>
+  <em>Figure 8:. Comparison of profile analyses for reconstruction results of different methods in sparse-view reconstruction onthe head DECT dataset. Sub-figures (a) and (b) show the numerical curves of reconstruction for different profiles in H-energy and L-energy channels. Curves of different colors denote different reconstruction methods</em>
+</p>
+
+<p align="center">
+  <img src="images/9.png" alt="PSNR and SSIM values and intermediate samples in the iterative process of (a) H-energy and (b) L-energy DECT." width="800">
+  <br>
+  <em>Figure 9:PSNR and SSIM values and intermediate samples in the iterative process of (a) H-energy and (b) L-energy DECT.</em>
+</p>
 
 ## Acknowledgements
 This work was supported by the National Natural Science Foundation of China 62122033 and the Key Research and Development Program of Jiangxi Province 20212BBE53001.
