@@ -39,13 +39,13 @@ Key words—Dual-energy CT, sparse-view reconstruction, virtual mask, dual-domai
 <p align="center">
   <img src="images/5.png" alt="Reconstruction results from 60 views on the head DECT dataset." width="800">
   <br>
-  <em>Figure 5:Reconstruction results from 60 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed  images, with the display window set to the range of [0, 220] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT.</em>
+  <em>Figure 5:Reconstruction results from 60 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed  images, with the display window set to the range of [0, 220] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT.</em>
 </p>
 
 <p align="center">
   <img src="images/6.png" alt="Reconstruction results from 90 views on the head DECT dataset." width="800">
   <br>
-  <em>Figure 6:Reconstruction results from 90 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed images, with the display window set to the range of [0, 180] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT</em>
+  <em>Figure 6:Reconstruction results from 90 views on the head DECT dataset. The first and third rows show H-energy and L-energy reconstructed images, while the second and fourth rows show residuals between reference and reconstructed images, with the display window set to the range of [0, 180] HU. (a) The reference image versus the images reconstructed by (b) FBP, (c) FBPConvNet, (d) NCSN++, (e) GMSD, (f) SWORD, and (g) VIP-DECT</em>
 </p>
 
 <p align="center">
