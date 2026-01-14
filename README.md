@@ -6,11 +6,31 @@ This repository contains the PyTorch implementation of the paper **"Virtual-mask
 
 
 ## Abstract
-Sparse-view sampling in dual-energy computed tomography (DECT) significantly reduces radiation dose and increases imaging speed, yet is highly prone to artifacts. Although diffusion models have demonstrated potential in effectively handling incomplete data, most existing methods in this field focus on the image do-main and lack global constraints, which consequently leads to insufficient reconstruction quality. In this study, we propose a dual-domain virtual-mask in-formed diffusion model for sparse-view reconstruction by leveraging the high inter-channel correlation in DECT. Specifically, the study designs a virtual mask and applies it to the high-energy and low-energy data to perform perturbation operations, thus constructing high-dimensional tensors that serve as the prior information of the diffusion model. In addition, a dual-domain collaboration strategy is adopted to integrate the information of the randomly selected high-frequency components in the wavelet domain with the information in the projection domain, for the purpose of optimizing the global structures and local details. Experimental results indicated that the present method exhibits excellent performance across multiple datasets.
+Sparse-view sampling in dual-energy computed tomography (DECT) significantly reduces radiation dose and increases imaging speed, yet is highly prone to artifacts. Although diffusion models have demonstrated potential in effectively handling incomplete data, most existing methods in this field focus on the image do-main and lack global constraints, which consequently leads to insufficient reconstruction quality. In this study, we propose a dual-domain virtual-mask in-formed diffusion model for sparse-view reconstruction by leveraging the high inter-channel correlation in DECT. Specifically, the study designs a virtual mask and applies it to the high-energy and low-energy data to perform perturbation operations, thus constructing high-dimensional tensors that serve as the prior information of the diffusion model. In addition, a dual-domain collaboration strategy is adopted to integrate the information of the randomly selected high-frequency components in the wavelet domain with the information in the projection domain, for the purpose of optimizing the global structures and local details. Experimental results indicated that the present method exhibits excellent performance across multiple datasets.
 
 Key words—Dual-energy CT, sparse-view reconstruction, virtual mask, dual-domain, collaborative strategy.
 
 ## Method Overview
+<p align="center">
+  <img src="images/1.png" alt="Illustration of the channel correlation and its perturbationprocess." width="800">
+  <br>
+  <em>Figure 1:Illustration of the channel correlation and its perturbationprocess. It shows the channel correlation and its perturbation process, including the correlation situation of the region-based SSIM, mask generation process, and process of using the generated mask to perturb the original tensor to obtain the perturbed tensor.</em>
+</p>
+
+<p align="center">
+  <img src="images/2.png" alt="Illustrationof the virtual mask cross-energy transformation. " width="800">
+  <br>
+  <em>Figure 2:Illustrationof the virtual mask cross-energy transformation. (a)VCT process inprojection domain. (b) VCT process in wavelet domain, (c) The corresponding imagefrom the perturbated projection domain, (d)The corre-sponding imagefrom the perturbated wavelet domain.</em>
+</p>
+
+<p align="center">
+  <img src="images/3.png" alt="The process of inverse mutual perturbation transformation." width="800">
+  <br>
+  <em>Figure 3:The process of inverse mutual perturbation transformation. (a)Projectiondomain,(b) Wavelet domain.</em>
+</p>
+
+
+
 
 
 ## Acknowledgements
